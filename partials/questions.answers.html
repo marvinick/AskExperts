@@ -1,0 +1,18 @@
+<div ng-show="question.answers.length">
+  <h2>Answers for {{ question.title }}</h2>
+  <ul>
+    <li ng-repeat="item in question.answers">
+      {{ item.content }}
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h2>Add an answer to {{ question.title }}</h2>
+  <form ng-submit="addAnswer()" class="form-inline" role="form">
+    <div class="form-group">
+      <input type="text" ng-model="answerContent" class="form-control" placeholder="Enter the anwer">
+    </div>
+    <button type="submit" class="btn btn-info">Submit</button>
+  </form>
+</div>
