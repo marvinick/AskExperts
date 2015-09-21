@@ -10,11 +10,16 @@
   <script src="controllers/AnswersController.js"></script>
   <script src="services/QuestionsFactory.js"></script>
   <script src="services/UtilitiesFactory.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <style> .glyphicon-thumbs-up { cursor:pointer } </style>
 </head>
 <body>
   <div class="container">
-    <div ui-view></div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div ui-view></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

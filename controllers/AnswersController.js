@@ -6,6 +6,6 @@ askExperts.controller('AnswersCtrl', function AnswersCtrl($scope, $stateParams, 
     }
 
     $scope.incrementUpvotes = function(answer) {
-      $scope.answerContent.upvotes += 1;
+      answer.upvotes += 1;
     };
 });

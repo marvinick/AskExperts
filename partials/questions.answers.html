@@ -2,7 +2,8 @@
   <h2>Answers for {{ question.title }}</h2>
   <ul>
     <li ng-repeat="item in question.answers | orderBy: '-upvotes'">
-      <span ng-click="incrementUpvotes(answer)">^</span>
+      <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(answer)"></span>
+
       {{ item.content }} - upvotes: {{ item.upvotes}}
     </li>
   </ul>
