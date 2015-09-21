@@ -1,16 +1,16 @@
 <div ng-show="question.answers.length">
   <h2>Answers for {{ question.title }}</h2>
   <ul>
-    <li ng-repeat="item in question.answers | orderBy: '-upvotes'">
+    <li ng-repeat="answer in question.answers | orderBy: '-upvotes'">
       <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(answer)"></span>
 
-      {{ item.content }} - upvotes: {{ item.upvotes}}
+      {{ answer.content }} - upvotes: {{ answer.upvotes}}
     </li>
   </ul>
 </div>
 
 <div>
-  <h2>Add an answer to {{ question.title }}</h2>
+  <h2>Answer to {{ question.title }}</h2>
   <form ng-submit="addAnswer()" class="form-inline" role="form">
     <div class="form-group">
       <input type="text" ng-model="answerContent" class="form-control" placeholder="Enter the anwer">
