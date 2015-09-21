@@ -7,7 +7,7 @@
 This app alllows users to ask questions, submit answers and vote the best answers. The answers are ordered by the amount of votes received.
 ##Setup
 
-Clone repository:
+##Clone repository:
 $ git clone https://github.com/marvinick/AskExperts
 run $ python -m SimpleHTTPServer
 Type localhost:8000 in a browser of your choice

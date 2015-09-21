@@ -13,19 +13,8 @@
   <h2>Answer to {{ question.title }}</h2>
   <form ng-submit="addAnswer()" class="form-inline" role="form">
     <div class="form-group">
-      <input type="text" ng-model="answerContent" class="form-control" placeholder="Enter the anwer">
+      <input type="text" ng-model="answerContent" class="form-control" placeholder="Enter the answer">
     </div>
     <button type="submit" class="btn btn-info">Submit</button>
   </form>
-</div>
-
-<div class="row approved ng-controller="ApprovedAnswersCtrl"">
-  <div class="col-md-6">
-    <h2>Approved Answers</h2>
-    <ul>
-      <li ng-repeat="item in approvedAnswers">
-        {{ item.content }}
-      </li>
-    </ul>
-  </div>
 </div>
