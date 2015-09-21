@@ -8,7 +8,7 @@ This app alllows users to ask questions, submit answers and vote the best answer
 ##Setup
 
 Clone repository:
-$ git clone https://github.com/marvinick/09.18.15.PizzaOrderJS.CR.git
+$ git clone https://github.com/marvinick/AskExperts
 run $ python -m SimpleHTTPServer
 Type localhost:8000 in a browser of your choice
 Enjoy!
