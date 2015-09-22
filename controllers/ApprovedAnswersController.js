@@ -1,3 +1,6 @@
-askExperts.controller("ApprovedAnswersCtrl", function ApprovedAnswersCtrl($scope) {
-  $scope.approvedAnswers = [{ content: "yes" }, { content: "no" }];
+askExperts.controller("ApprovedAnswersCtrl", function ApprovedAnswersCtrl($scope, AnswersFactory) {
+  $scope.answers = AnswersFactory.answers;
+  $scope.addAnswerWithApprovalNote = function(answer) {
+    answer.approvalNote = true;
+  };
 });
