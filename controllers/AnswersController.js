@@ -2,7 +2,7 @@ askExperts.controller('AnswersCtrl', function AnswersCtrl($scope, $stateParams, 
     $scope.question = UtilitiesFactory.findById(QuestionsFactory.questions, $stateParams.questionId)
 
     $scope.addAnswer = function() {
-      $scope.question.answers.push({ content: $scope.answerContent, upvotes: 0, approvedAnswer: false });
+      $scope.question.answers.push({ content: $scope.answerContent, upvotes: 0 });
       $scope.answerContent = null;
     };
 
