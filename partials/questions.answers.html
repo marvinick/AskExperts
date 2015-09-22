@@ -31,8 +31,9 @@
   <div class="col-md-6" ng-show="answersWithApproval.length">
     <h3>With Approval</h3>
     <ul>
-      <li ng-repeat="item in answersWithApproval = (answers | filter:{approvalNote: true})">
-        {{ item.content }}
+      <li ng-repeat="item in answersWithApproval = (answers | filter:{approvalNote: true}) | orderBy: '-upvotes'">
+        <span class="glyphicon glyphicon-thumbs-up" ng-click="AnswersFactory.incrementUpvotes(item)"></span>
+        {{ item.content }} - upvotes: {{ item.upvotes }}
       </li>
     </ul>
   </div>
